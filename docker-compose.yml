@@ -1,0 +1,16 @@
+version: '3.2'
+
+services:
+
+  greeter:
+    build:
+      context: .
+    image: greeter
+    networks:
+      - lab_network
+    profiles:
+      - donotstart
+
+networks:
+  lab_network:
+    external: false
