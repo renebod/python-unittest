@@ -9,4 +9,4 @@ WORKDIR $WORKINGDIR
 # RUN pip install -r requirements.txt
 
 COPY experiment.py test_experiment.py /code/
-CMD python -m unittest discover -v
+# CMD python -m unittest discover -v

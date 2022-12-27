@@ -2,10 +2,11 @@ version: '3.2'
 
 services:
 
-  greeter:
+  greeter_test:
     build:
       context: .
     image: greeter
+    command: python -m unittest discover -v
     networks:
       - lab_network
     profiles:
